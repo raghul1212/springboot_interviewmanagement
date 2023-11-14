@@ -3,27 +3,34 @@ package com.revature.interviewmanagement.dao;
 import java.util.List;
 
 import com.revature.interviewmanagement.entity.Candidate;
+import com.revature.interviewmanagement.model.CandidateDto;
 
 public interface CandidateDao {
 
-	public String addCandidate(Candidate candidate);
+	String addCandidate(Candidate candidate);
 
-	public String updateCandidate(Long id, Candidate candidate);
+	String updateCandidate(Candidate candidate);
 
-	public String deleteCandidate(Long id);
+	String deleteCandidate(Long id);
 
-	public Candidate getCandidateByPhoneNumber(String phoneNumber);
+	List<Candidate> getCandidateByPhoneNumber(String phoneNumber);
 
-	public List<Candidate> getCandidateByName(String name);
+	List<Candidate> getCandidateByExperience(String exp);
 
-	public List<Candidate> getCandidateByExperience(Integer exp);
+	List<Candidate> getCandidateByRole(String role);
 
-	public List<Candidate> getCandidateByRole(String role);
+	List<Candidate> getCandidateByEmailId(String email);
 
-	public Candidate getCandidateByEmailId(String email);
+	Candidate getCandidateById(Long id);
 
-	public Candidate getCandidateById(Long id);
+	List<Candidate> getAllCandidate();
 
-	public List<Candidate> getAllCandidate();
+	List<Candidate> getCandidateByName(String name);
+
+	List<?> getAllExperience();
+
+	List<?> getAllJobRole();
+
+	Candidate validateJobRole(CandidateDto candidateDto);
 
 }

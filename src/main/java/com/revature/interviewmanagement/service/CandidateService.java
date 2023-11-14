@@ -3,25 +3,34 @@ package com.revature.interviewmanagement.service;
 import java.util.List;
 
 import com.revature.interviewmanagement.entity.Candidate;
+import com.revature.interviewmanagement.model.CandidateDto;
 
 public interface CandidateService {
-	public List<Candidate> getAllCandidate();
 
-	public Candidate getCandidateById(Long id);
+	List<Candidate> getAllCandidate();
 
-	public Candidate getCandidateByEmailId(String email);
+	Candidate getCandidateById(Long id);
 
-	public List<Candidate> getCandidateByRole(String role);
+	List<Candidate> getCandidateByEmailId(CandidateDto candidateDto);
 
-	public List<Candidate> getCandidateByExperience(Integer exp);
+	List<Candidate> getCandidateByRole(String role);
 
-	public List<Candidate> getCandidateByName(String name);
+	List<Candidate> getCandidateByExperience(String exp);
 
-	public Candidate getCandidateByPhoneNumber(String phoneNumber);
+	List<Candidate> getCandidateByPhoneNumber(CandidateDto candidateDto);
 
-	public String deleteCandidate(Long id);
+	String deleteCandidate(Long id);
 
-	public String updateCandidate(Long id,Candidate candidate);
+	String updateCandidate(CandidateDto candidateDto);
 
-	public String addCandidate(Candidate candidate);
+	String addCandidate(CandidateDto candidateDto);
+
+	List<Candidate> getCandidateByName(String name);
+
+	List<?> getAllExperience();
+
+	List<?> getAllJobRole();
+
+	Boolean validateJobRole(CandidateDto candidateDto);
+
 }
