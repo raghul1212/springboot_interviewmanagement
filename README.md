@@ -74,19 +74,6 @@ This is a Spring Boot application to manage the interview process of candidates.
 
 2. Select "File" -> "Open Folder" and choose the project folder.
 
-
-## Usage
-
-[Provide information on how to use or interact with the application. Include examples or screenshots if applicable.]
-
-## Endpoints
-
-[Document the API endpoints if your application exposes a REST API.]
-
-## Configuration
-
-[Explain any configuration settings or environment variables that need to be set.]
-
 ## Build and Run
 
 1. After opening the project in your IDE, wait for the IDE to download dependencies.
@@ -116,5 +103,5 @@ Congratulations! You've successfully cloned the repository and set up the projec
 
 ## License
 
-This project is licensed under the [Your License Name] - see the [LICENSE.md](LICENSE.md) file for details.
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
 
