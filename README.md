@@ -11,9 +11,6 @@ This is a Spring Boot application to manage the interview process of candidates.
 
 - [Prerequisites](#prerequisites)
 - [Getting Started](#getting-started)
-- [Usage](#usage)
-- [Endpoints](#endpoints)
-- [Configuration](#configuration)
 - [Build and Run](#build-and-run)
 - [Test Locally](#test-locally)
 - [License](#license)
